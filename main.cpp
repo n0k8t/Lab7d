@@ -3,25 +3,23 @@
 #include <map>
 #include <fstream>
 
-using namespace std;
-
 int main()
 {
-    ifstream file;
+    std::ifstream file;
     file.open("SomeFile");
 
-    map <string,int> words;
-    string word;
+    std::map <std::string,int> words;
+    std::string word;
     while (file >> word)
     {
         words[word]++;
     }
 
-    map <string,int>::iterator it;
-    cout<<"Words count:"<<endl;
+    std::map <std::string,int>::iterator it;
+    std::cout<<"Words count:"<<std::endl;
     for (it = words.begin();it!=words.end();it++)
     {
-        cout << (*it).first << ": " << (*it).second << endl;
+        std::cout << (*it).first << ": " << (*it).second << std::endl;
     }
     return 0;
 }
