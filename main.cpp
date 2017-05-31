@@ -18,10 +18,10 @@ int main()
     }
 
     map <string,int>::iterator it;
-    std::cout<<"Words count:"<<endl;
+    cout<<"Words count:"<<endl;
     for (it = words.begin();it!=words.end();it++)
     {
-        std::cout << (*it).first << ": " << (*it).second << endl;
+        cout << (*it).first << ": " << (*it).second << endl;
     }
     return 0;
 }
